@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b41jlh6bj25sx"]
+
+[ext_resource type="Script" uid="uid://bunbb18fupb1e" path="res://scripts/Trainers/Stage 6/FieldBuilderStage6.cs" id="1_n314y"]
+[ext_resource type="PackedScene" uid="uid://dplnuehfpfc8r" path="res://scenes/physical entities/wall.tscn" id="2_vgb6o"]
+[ext_resource type="PackedScene" uid="uid://ddpqa0nfdxh4i" path="res://scenes/physical entities/goal.tscn" id="3_vd88e"]
+[ext_resource type="PackedScene" uid="uid://c8kis5n71xwvt" path="res://scenes/physical entities/bounds.tscn" id="4_pi62e"]
+[ext_resource type="PackedScene" uid="uid://bhfnjxbn6prux" path="res://scenes/physical entities/player.tscn" id="5_klix4"]
+[ext_resource type="PackedScene" uid="uid://mpojjklwebac" path="res://scenes/physical entities/ball.tscn" id="6_8540a"]
+[ext_resource type="PackedScene" uid="uid://b402hsabt2msl" path="res://scenes/StatsDisplay.tscn" id="7_akxim"]
+
+[node name="Field Builder Stage 6" type="Node2D" unique_id=257408359]
+script = ExtResource("1_n314y")
+WallScene = ExtResource("2_vgb6o")
+GoalScene = ExtResource("3_vd88e")
+BoundsScene = ExtResource("4_pi62e")
+PlayerScene = ExtResource("5_klix4")
+BallScene = ExtResource("6_8540a")
+Width = 100.0
+Height = 65.0
+GoalHeight = 5.0
+StatsScene = ExtResource("7_akxim")

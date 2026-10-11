@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://ck2eeffmwij6h"]
+
+[ext_resource type="PackedScene" uid="uid://bdearfv1jd74d" path="res://scenes/league.tscn" id="2_ln3bn"]
+[ext_resource type="Script" uid="uid://ccpnhyxgew4va" path="res://scripts/CameraController.cs" id="5_aoq7b"]
+
+[node name="Sim" type="Node2D" unique_id=1399374036]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=494064735]
+zoom = Vector2(0.2, 0.2)
+script = ExtResource("5_aoq7b")
+PanSpeed = 1.0
+MinZoom = 0.01
+
+[node name="League" parent="." unique_id=2060849109 node_paths=PackedStringArray("Camera") instance=ExtResource("2_ln3bn")]
+position = Vector2(-127, -265)
+Camera = NodePath("../Camera2D")

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://5spqdej47wgp"]
+
+[ext_resource type="Script" uid="uid://btw1qhd2t8fsg" path="res://scripts/Sim.cs" id="1_4myfd"]
+[ext_resource type="Script" uid="uid://ccpnhyxgew4va" path="res://scripts/CameraController.cs" id="1_asqxo"]
+[ext_resource type="PackedScene" uid="uid://cgg6uocpv0xnf" path="res://scenes/Training Stage 1/trainer_stage_1.tscn" id="2_cxeug"]
+[ext_resource type="PackedScene" uid="uid://md5np41idohh" path="res://scenes/Training Stage 2/trainer_stage_2.tscn" id="2_h2c7k"]
+[ext_resource type="PackedScene" uid="uid://c03md4mkflfkv" path="res://scenes/Training Stage 3/trainer_stage_3.tscn" id="4_jureh"]
+[ext_resource type="PackedScene" uid="uid://dy7rijpbmoqam" path="res://scenes/Training Stage 4/trainer_stage_4.tscn" id="5_cxeug"]
+[ext_resource type="PackedScene" uid="uid://cvenisry71ovx" path="res://scenes/Training Stage 5/trainer_stage_5.tscn" id="6_jureh"]
+[ext_resource type="PackedScene" uid="uid://b5ixe7xwf2vss" path="res://scenes/Training Stage 6/trainer_stage_6.tscn" id="7_xqoxs"]
+
+[node name="Sim" type="Node2D" unique_id=1399374036]
+script = ExtResource("1_4myfd")
+TrainerStage1 = ExtResource("2_cxeug")
+TrainerStage2 = ExtResource("2_h2c7k")
+TrainerStage3 = ExtResource("4_jureh")
+TrainerStage4 = ExtResource("5_cxeug")
+TrainerStage5 = ExtResource("6_jureh")
+TrainerStage6 = ExtResource("7_xqoxs")
+StartingStage = 3
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=494064735]
+zoom = Vector2(0.2, 0.2)
+script = ExtResource("1_asqxo")
+PanSpeed = 1.0
+MinZoom = 0.01

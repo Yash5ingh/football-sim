@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cgg6uocpv0xnf"]
+
+[ext_resource type="Script" uid="uid://8xd5yh4xfp7n" path="res://scripts/Trainers/Stage 1/TrainerStage1.cs" id="1_4qxju"]
+[ext_resource type="PackedScene" uid="uid://pb3btqt0pt5n" path="res://scenes/Training Stage 1/field_builder_Ts1.tscn" id="2_11ol6"]
+
+[node name="Trainer Stage 1" type="Node2D" unique_id=472399117]
+script = ExtResource("1_4qxju")
+MutationChance = 0.0
+MutationAmount = 0.0
+PopulationSize = 30
+Elites = 5
+FieldWidth = 50.0
+FieldHeight = 50.0
+FieldBuilderStage1 = ExtResource("2_11ol6")
+GenTime = 45.0
+GensWithoutImprovement = 30

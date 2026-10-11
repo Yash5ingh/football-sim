@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ddpqa0nfdxh4i"]
+
+[ext_resource type="Texture2D" uid="uid://bokqehguh8h35" path="res://sprite/square.png" id="1_jbojv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6iixf"]
+
+[node name="Wall" type="Area2D" unique_id=245404420]
+collision_layer = 8
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=298370045]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_jbojv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1637206535]
+scale = Vector2(1.6, 1.6)
+shape = SubResource("RectangleShape2D_6iixf")

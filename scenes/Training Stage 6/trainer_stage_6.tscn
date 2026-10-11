@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://b5ixe7xwf2vss"]
+
+[ext_resource type="Script" uid="uid://c4jfw8lmuuksn" path="res://scripts/Trainers/Stage 6/TrainerStage6Elo.cs" id="1_5hn1j"]
+[ext_resource type="PackedScene" uid="uid://b41jlh6bj25sx" path="res://scenes/Training Stage 6/field_builder_Ts6.tscn" id="2_foey6"]
+
+[node name="Trainer Stage 6" type="Node2D" unique_id=472399117]
+script = ExtResource("1_5hn1j")
+MutationChance = 20.0
+MutationAmount = 0.1
+ResetAfterRounds = 500
+PlayerMutationChance = 1.0
+MixTeamChance = 0.2
+GoalHeight = 10.0
+BoundsOffset = 10.0
+StartFieldWidth = 50.0
+StartFieldHeight = 40.0
+StartGoalHeight = 8.0
+StartTeamSize = 5
+MatchesPerRound = 15
+EliminatePlayers = 30
+MinMatchesToEliminate = 2
+FieldBuilder = ExtResource("2_foey6")
+StartGenTime = 60.0
+SaveTop = 30
+SaveAfterRounds = 50
+RankedMatchMaking = false
+FixPhysicalAttributes = true
+
+[node name="Rankings" type="RichTextLabel" parent="." unique_id=612075350]
+offset_left = -3133.0
+offset_top = -1311.0
+offset_right = -2829.0
+offset_bottom = -994.0
+theme_override_colors/default_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+tab_size = 8

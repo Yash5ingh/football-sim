@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b402hsabt2msl"]
+
+[node name="FieldStats" type="Node2D" unique_id=529358640]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1282923640]
+offset_right = 40.0
+offset_bottom = 92.0
+theme_override_font_sizes/normal_font_size = 64
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dy7rijpbmoqam"]
+
+[ext_resource type="Script" uid="uid://ji82p0lynf88" path="res://scripts/Trainers/Stage 4/TrainerStage4.cs" id="1_nrmls"]
+[ext_resource type="PackedScene" uid="uid://dejno6nbjkp4o" path="res://scenes/Training Stage 4/field_builder_Ts4.tscn" id="2_xks81"]
+
+[node name="Trainer Stage 4" type="Node2D" unique_id=472399117]
+script = ExtResource("1_nrmls")
+MutationChance = 20.0
+MutationAmount = 0.1
+TeamSize = 5
+PopulationSize = 50
+Elites = 5
+FieldWidth = 50.0
+FieldHeight = 40.0
+BoundsOffset = 10.0
+FieldBuilderStage4 = ExtResource("2_xks81")
+ResetScenesAfter = 1

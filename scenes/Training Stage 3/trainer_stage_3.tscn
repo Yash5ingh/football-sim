@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c03md4mkflfkv"]
+
+[ext_resource type="Script" uid="uid://bh68jknv3f5cj" path="res://scripts/Trainers/Stage 3/TrainerStage3.cs" id="1_1ckeu"]
+[ext_resource type="PackedScene" uid="uid://wu2g6nrwq8uo" path="res://scenes/Training Stage 3/field_builder_Ts3.tscn" id="2_5koqa"]
+
+[node name="Trainer Stage 3" type="Node2D" unique_id=472399117]
+script = ExtResource("1_1ckeu")
+MutationAmount = 0.5
+Elites = 5
+FieldWidth = 100.0
+FieldHeight = 65.0
+GoalHeight = 5.0
+currActiveOpponents = 1
+FieldBuilderStage3 = ExtResource("2_5koqa")

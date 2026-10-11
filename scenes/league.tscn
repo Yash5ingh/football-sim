@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://bdearfv1jd74d"]
+
+[ext_resource type="Script" uid="uid://bmldu0cyqgoqg" path="res://scripts/League/League.cs" id="1_entjg"]
+[ext_resource type="PackedScene" uid="uid://lvjgkcmd3873" path="res://scenes/match.tscn" id="2_isba8"]
+
+[node name="League" type="Node2D" unique_id=2060849109 node_paths=PackedStringArray("TableLabel", "SeasonHistoryLabel", "MatchDayLabel", "PlayerStatsLabel", "SquadsLabel")]
+script = ExtResource("1_entjg")
+NumTeams = 4
+RelegateTeams = 1
+MatchScene = ExtResource("2_isba8")
+TableLabel = NodePath("LeagueTable")
+SeasonHistoryLabel = NodePath("SeasonHistory")
+MatchDayLabel = NodePath("MatchDay")
+PlayerStatsLabel = NodePath("PlayerStats")
+SquadsLabel = NodePath("ClubSquads")
+MatchTime = 200.0
+FieldWidth = 110.0
+FieldHeight = 65.0
+GoalHeight = 8.0
+BoundsOffset = 8.0
+RenderFields = 10
+RetainHistory = false
+CameraFollowSpeed = 0.2
+
+[node name="LeagueTable" type="RichTextLabel" parent="." unique_id=322997104]
+offset_left = -3011.13
+offset_top = -1226.0
+offset_right = -2707.13
+offset_bottom = -909.0
+focus_mode = 2
+theme_override_colors/default_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+tab_size = 8
+selection_enabled = true
+
+[node name="SeasonHistory" type="RichTextLabel" parent="." unique_id=1668600672]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -5891.525
+offset_top = -1172.0
+offset_right = -5587.525
+offset_bottom = -855.0001
+grow_vertical = 0
+theme_override_colors/default_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+tab_size = 8
+
+[node name="MatchDay" type="RichTextLabel" parent="." unique_id=366389032]
+offset_left = -2910.0
+offset_top = -110.0
+offset_right = -2606.0
+offset_bottom = 207.0
+theme_override_colors/default_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+tab_size = 8
+
+[node name="PlayerStats" type="RichTextLabel" parent="." unique_id=83753139]
+offset_left = -3834.0
+offset_top = -1197.0
+offset_right = -3530.0
+offset_bottom = -880.0
+theme_override_colors/default_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+tab_size = 8
+
+[node name="ClubSquads" type="RichTextLabel" parent="." unique_id=1299222275]
+offset_left = -4816.0
+offset_top = -1183.0
+offset_right = -4512.0
+offset_bottom = -866.0
+theme_override_colors/default_color = Color(0.93333334, 0.93333334, 0.93333334, 1)
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 0
+tab_size = 8
